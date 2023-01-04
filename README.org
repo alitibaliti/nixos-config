@@ -2,6 +2,9 @@
 #+description: General information about my flake and how to set it up
 #+author: Matthias Benaets
 
+
+* Shameless fork of [[https://github.com/MatthiasBenaets/nixos-config]]
+
 #+attr_org: :width 600
 [[file:rsc/Header.svg]]
 
