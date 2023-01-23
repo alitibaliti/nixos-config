@@ -17,7 +17,6 @@
 
 { 
   imports =                                   # Home Manager Modules
-    (import ../modules/editors) ++
     (import ../modules/programs) ++
     (import ../modules/services);
 
@@ -47,10 +46,11 @@
       remmina           # XRDP & VNC Client
 
       # File Management
-      okular            # PDF Viewer
+      cinnamon.nemo     # File Manager
       gnome.file-roller # Archive Manager
+      okular            # PDF Viewer
       pcmanfm           # File Manager
-      rsync             # Syncer - $ ssync -r dir1/ dir2/
+      rsync             # Syncer - $ rsync -r dir1/ dir2/
       unzip             # Zip Files
       unrar             # Rar Files
 
