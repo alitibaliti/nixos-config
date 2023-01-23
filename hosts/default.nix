@@ -89,7 +89,7 @@ in
     ];
   };
 
-  z2 = lib.nixosSystem {                                # Laptop profile
+  z2 = lib.nixosSystem {                                # z2 Laptop profile
     inherit system;
     specialArgs = {
       inherit inputs user location;
@@ -109,12 +109,13 @@ in
         home-manager.extraSpecialArgs = {
           inherit user;
           host = {
-            hostName = "desktop";
+            hostName = "z2";
             mainMonitor = "eDP-1";
           };
         };
         home-manager.users.${user} = {
-          imports = [(import ./home.nix)] ++ [(import ./laptop/home.nix)];
+          # imports = [(import ./home.nix)] ++ [(import ./laptop/home.nix)];
+          imports = [(import ./home.nix)] ++ [(import ./z2/home.nix)];
         };
       }
     ];
