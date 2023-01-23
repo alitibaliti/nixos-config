@@ -51,7 +51,7 @@ let
       bspc wm -O ${mainMonitor} ${secondMonitor}
       polybar sec &
     ''
-    else if hostName == "laptop" || hostName == "vm" then ''
+    else if hostName == "laptop" || hostName == "vm"  || hostName == "z2" then ''
       bspc monitor -d 1 2 3 4 5
     ''
     else false)
